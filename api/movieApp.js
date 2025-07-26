@@ -2,7 +2,7 @@
     const BASE_URL = 'https://api.themoviedb.org/3';
     const API_KEY = import.meta.env.VITE_MOVIE_API_KEY;
 
-    const moviesEndpoint = `${BASE_URL}/discover/movie?sort_by=popularity.desc?api_key=${API_KEY}`;
+    const moviesEndpoint = `${BASE_URL}/discover/movie?sort_by=popularity.desc&api_key=${API_KEY}`;
     const searchMovieEndpoint = `${BASE_URL}/search/movie?api_key=${API_KEY}`;
 
     export const img500 = (path) => path ? `https://image.tmdb.org/t/p/w500${path}` : null;
